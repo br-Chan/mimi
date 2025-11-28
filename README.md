@@ -25,9 +25,9 @@ This project uses [Vitest](https://vitest.dev/) for testing. You can run the tes
 pnpm test
 ```
 
-## Styling
+## Design
 
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
+This project uses [Material UI](https://mui.com/material-ui/).
 
 
 ## Linting & Formatting
