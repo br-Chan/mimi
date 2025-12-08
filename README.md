@@ -25,9 +25,9 @@ This project uses [Vitest](https://vitest.dev/) for testing. You can run the tes
 pnpm test
 ```
 
-## Design
+## Styling
 
-This project uses [Material UI](https://mui.com/material-ui/).
+This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
 
 
 ## Linting & Formatting
@@ -39,6 +39,15 @@ This project uses [Biome](https://biomejs.dev/) for linting and formatting. The 
 pnpm lint
 pnpm format
 pnpm check
+```
+
+
+## Shadcn
+
+Add components using the latest version of [Shadcn](https://ui.shadcn.com/).
+
+```bash
+pnpm dlx shadcn@latest add button
 ```
 
 
