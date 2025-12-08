@@ -36,7 +36,7 @@ function App() {
 				reload.
 			</Typography>
 
-			<Box sx={{ display: "flex", gap: 2 }}>
+			<Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
 				<Link
 					href="https://reactjs.org"
 					target="_blank"
@@ -44,7 +44,7 @@ function App() {
 					underline="hover"
 					sx={{ color: "#61dafb" }}
 				>
-					Learn React
+					Chat with your friends!
 				</Link>
 
 				<Link
@@ -54,7 +54,7 @@ function App() {
 					underline="hover"
 					sx={{ color: "#61dafb" }}
 				>
-					Learn TanStack
+					Train me!
 				</Link>
 			</Box>
 		</Box>
