@@ -10,8 +10,8 @@ export const Route = createFileRoute("/chat/")({
 	component: Chat,
 	validateSearch: (search: Record<string, unknown>): ChatSearch => {
 		return {
-			room: (search.room as string) ?? undefined,
-			username: (search.username as string) ?? undefined,
+			room: (search.room as string) ?? "M1M1",
+			username: (search.username as string) ?? "John Doe",
 		};
 	},
 });
