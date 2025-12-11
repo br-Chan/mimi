@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
 import type { ChatMessage } from "@/hooks/use-realtime-chat";
+import { cn } from "@/lib/utils";
 
 interface ChatMessageItemProps {
 	message: ChatMessage;
@@ -39,7 +39,7 @@ export const ChatMessageItem = ({
 				)}
 				<div
 					className={cn(
-						"py-2 px-3 rounded-xl text-sm w-fit",
+						"py-2 px-3 rounded-xl text-sm w-fit break-all",
 						isOwnMessage
 							? "bg-primary text-primary-foreground"
 							: "bg-muted text-foreground",

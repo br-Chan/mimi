@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { sendPrompt } from "@/lib/firebase/mimi";
 import { createClient } from "@/lib/supabase/client";
 
 interface UseRealtimeChatProps {
@@ -40,7 +41,7 @@ export function useRealtimeChat({ roomName, username }: UseRealtimeChatProps) {
 
 					const joinMessage: ChatMessage = {
 						id: crypto.randomUUID(),
-						content: `${username} has joined this moderated chatroom!`,
+						content: `Hi ${username}, I'm the Moderation in Messaging Interface - MIMI for short. Welcome!`,
 						user: { name: "MIMI" },
 						createdAt: new Date().toISOString(),
 					};
@@ -68,9 +69,11 @@ export function useRealtimeChat({ roomName, username }: UseRealtimeChatProps) {
 		async (content: string) => {
 			if (!channel || !isConnected) return;
 
+			const moderatedContent = await sendPrompt(content);
+
 			const message: ChatMessage = {
 				id: crypto.randomUUID(),
-				content,
+				content: moderatedContent,
 				user: {
 					name: username,
 				},

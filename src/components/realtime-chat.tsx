@@ -68,7 +68,7 @@ export const RealtimeChat = ({
 	}, [allMessages, scrollToBottom]);
 
 	const handleSendMessage = useCallback(
-		(e: React.FormEvent) => {
+		async (e: React.FormEvent) => {
 			e.preventDefault();
 			if (!newMessage.trim() || !isConnected) return;
 
