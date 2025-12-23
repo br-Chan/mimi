@@ -1,4 +1,63 @@
-Welcome to your new TanStack app! 
+# MIMI - the Moderation In Messaging Interface
+
+## NOTICE to visitors: I am very sad (I have no money)
+
+I have lots of plans for this project, and wanted to get it done by the summer of 2025/2026. I've actually already finished half the project (kind of; not really; actually not at all). If I were to deploy this, we'd already be able to chat to each other in a real-time chatroom and MIMI the moderation bot will alter our messages to make them family and corporation friendly.
+
+...And then I run out of AI tokens. Using the free Gemini plan only gives me so many tokens each day, and I'm not keen on the paid plans, meaning that the actual conversation experience is underwhelming since only about 20 messages can be sent per day. One alternative is to make users provide their own tokens, but being able to just hop on a site and start playing with it (for free) is half the fun.
+
+So, I will be sharing all of my plans for this project here; if a wealthy benefactor with a supply of LLM API tokens thinks this stupid project is hilarious and needs to exist, then let me know in an GitHub issue. Otherwise, this project will sadly end up having a lot less whimsy.
+
+## My Plan
+
+This project is set in the near (but hopefully not too near) future. It centres around MIMI, a fictional surveillance and moderation bot -- she was created with the intention to be implemented across all chat platforms on the internet to make them clean and standardised across the world. All they need is funding and backing, so they market the bot as the cute, personified robot and use flashy terms like being "powered by AI" and being "deployed with Vercel".
+
+My goal is to produce the fictional prototype for MIMI that the creators intend to demo the bot to their shareholders and the wider public, much like how ChatGPT was released to the public at its inception. This prototype will consist of two parts:
+
+### MIMI's Delivery Service
+
+A chat application that incorporates MIMI. You can enter chatrooms and send messages like you would in Discord or WhatsApp, but MIMI will moderate every single message through her moderation pipeline.
+
+1. user sends message
+2. MIMI analyses message
+3. MIMI scores message based on various moderation rules
+4. If score is too low, MIMI will replace the message with one of a number of default messages
+5. If score not too low but still bad, MIMI will tweak the message based on the broken rules
+6. message is sent to the chat (with indication of how good the orig message was (colour shading?))
+
+The moderation rules (and system prompt for MIMI) are already present in this codebase. The aim is to give the (real life) users firsthand experience with what moderation at this scale could look like -- having your own autonomy and self-governance ripped out of your hands and having no control over the words that come out of your digital mouth. An equally important aim is to have the experience be funny and stupid. Even through testing it myself, it was hilarious to watch the AI completely dissolve my own words into something completely dry and ordinary.
+
+### The MIMItation game
+
+In the fictional world, this part of the prototype is a game used "to train MIMI and improve her moderation capabilities". It's a subversion of the Turing Test, a game coined by Alan Turing in which a person must identify whether they have spoken to a human or a machine after having a conversation with them. It's also called the Imitation Game. The pun feels like destiny.
+
+1. A group of players chat in a chatroom for 2 minutes
+2. When the time is up, the chat is processed and a log of the conversation is given to MIMI
+3. MIMI analyses the chat and for each player guesses if they are a machine or a human
+4. Player/s are eliminated
+5. Repeat steps 1-4 as needed, and last player standing wins
+
+Variations:
+- MIMI is told only 1 player is a bot, and eliminates the player she thinks is the bot each round (the game ends when 1 player remains)
+- MIMI is told all but 1 player is a bot, and eliminates all players she believes are bots (therefore only 1 round, and the player that is spared is the winner)
+- MIMI is told there is a mystery number of bots, and eliminates a variable number of players (therefore only 1 round, and there could be multiple winners)
+
+## The Point of this project
+
+1. it's funny. They're 2 ideas that I would love to spend time on; I only created the MIMI story so that I could work them together into the same codebase.
+2. the theme of the project is to demonstrate both the good and dark sides of products or innovations that become wildly popular in a very short time (e.g. generative AI). It's fun to play around with these new technologies, but it can also be very dangerous to let them take control of society in such a short time. Let us hope that something like MIMI does not ever become reality, no matter how cute their mascot is.
+3. it's funny
+
+## Tech stack
+
+- React
+- Tanstack Start
+- Tailwind CSS & ShadCN
+- Supabase
+- Firebase & Gemini API
+- Biome for linting *and* formatting!
+
+---
 
 # Getting Started
 
