@@ -2,21 +2,21 @@
 
 ## NOTICE to visitors: I am very sad (I have no money)
 
-I have lots of plans for this project, and wanted to get it done by the summer of 2025/2026. I've actually already finished half the project (kind of; not really; actually not at all). If I were to deploy this, we'd already be able to chat to each other in a real-time chatroom and MIMI the moderation bot will alter our messages to make them family and corporation friendly.
+I have lots of plans for this project, and wanted to get it done by the summer of 2025/2026. I've actually already finished half the project (kind of; not really; actually not at all). If I were to deploy this, we can already chat to each other in a real-time chatroom and MIMI the moderation bot will alter our messages to make them family and corporation friendly.
 
-...And then I run out of AI tokens. Using the free Gemini plan only gives me so many tokens each day, and I'm not keen on the paid plans, meaning that the actual conversation experience is underwhelming since only about 20 messages can be sent per day. One alternative is to make users provide their own tokens, but being able to just hop on a site and start playing with it (for free) is half the fun.
+...And then I run out of AI tokens. Using the free Gemini plan only gives me so many tokens each day, and I'm not keen on the paid plans, meaning that the actual conversation experience is underwhelming: only about 20 messages can be sent per day. One alternative is to make users provide their own tokens, but being able to just hop on a site and start playing with it (for free) is half the fun.
 
 So, I will be sharing all of my plans for this project here; if a wealthy benefactor with a supply of LLM API tokens thinks this stupid project is hilarious and needs to exist, then let me know in an GitHub issue. Otherwise, this project will sadly end up having a lot less whimsy.
 
 ## My Plan
 
-This project is set in the near (but hopefully not too near) future. It centres around MIMI, a fictional surveillance and moderation bot -- she was created with the intention to be implemented across all chat platforms on the internet to make them clean and standardised across the world. All they need is funding and backing, so they market the bot as the cute, personified robot and use flashy terms like being "powered by AI" and being "deployed with Vercel".
+This project's backstory is set in the near (but hopefully not too near) future. It centres around MIMI, a fictional surveillance and moderation bot -- she was created with the intention to be implemented across all chat platforms on the internet to make them clean and standardised across the world. All they need is funding and backing, so they market the bot as a cute, personified robot and use flashy terms like being "powered by AI" and being "deployed with Vercel".
 
-My goal is to produce the fictional prototype for MIMI that the creators intend to demo the bot to their shareholders and the wider public, much like how ChatGPT was released to the public at its inception. This prototype will consist of two parts:
+My goal is to produce the fictional prototype for MIMI that the creators intend to demo to their shareholders and let the wider public use, much like how ChatGPT was released to the public at its inception. This prototype will consist of two parts:
 
 ### MIMI's Delivery Service
 
-A chat application that incorporates MIMI. You can enter chatrooms and send messages like you would in Discord or WhatsApp, but MIMI will moderate every single message through her moderation pipeline.
+A chat application that incorporates MIMI, who aggressively moderates every message you send. You can enter chatrooms and send messages like you would in Discord or WhatsApp, but MIMI will moderate every single message through her moderation pipeline.
 
 1. user sends message
 2. MIMI analyses message
@@ -27,9 +27,9 @@ A chat application that incorporates MIMI. You can enter chatrooms and send mess
 
 The moderation rules (and system prompt for MIMI) are already present in this codebase. The aim is to give the (real life) users firsthand experience with what moderation at this scale could look like -- having your own autonomy and self-governance ripped out of your hands and having no control over the words that come out of your digital mouth. An equally important aim is to have the experience be funny and stupid. Even through testing it myself, it was hilarious to watch the AI completely dissolve my own words into something completely dry and ordinary.
 
-### The MIMItation game
+### The MIMI-tation game
 
-In the fictional world, this part of the prototype is a game used "to train MIMI and improve her moderation capabilities". It's a subversion of the Turing Test, a game coined by Alan Turing in which a person must identify whether they have spoken to a human or a machine after having a conversation with them. It's also called the Imitation Game. The pun feels like destiny.
+In the fictional world, this part of the prototype is a game used "to train MIMI and improve her moderation capabilities". It's a subversion of the Turing Test, AKA the Imitation Game, a game coined by Alan Turing in which a person must identify whether they have spoken to a human or a machine after having a conversation with them.
 
 1. A group of players chat in a chatroom for 2 minutes
 2. When the time is up, the chat is processed and a log of the conversation is given to MIMI
